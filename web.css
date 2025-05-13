@@ -1,10 +1,50 @@
-html {
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
     background-color: #333333;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+a:link, a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
 .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    text-align: center;
     background-color: #222222;
+}
+.navbar h1 a {
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navbar h1 a:hover {
+    background-color: #333333;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 0px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.nav-links a:hover {
+    background-color: #333333;
 }
