@@ -103,3 +103,32 @@ a:link, a:visited {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+.primarysocials {
+    padding: 15px;
+    margin: 20px;
+    margin-top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #222222;
+    gap: 20px;
+}
+
+.primarysocials table {
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.primarysocials table td {
+    border-radius: 5px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.primarysocials table td:hover {
+    background-color: #333333;
+}
