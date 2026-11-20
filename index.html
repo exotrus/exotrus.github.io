@@ -6,19 +6,25 @@
     <canvas id="unimap">
     </canvas>
     <script>
-        
+        scale = 10;
+        anchorx = 0;
+        anchory = 0;
         const canvas = document.getElementById("unimap");
         const ctx = canvas.getContext("2d");
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        function reize(){
+        function resize(){
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-
         }
-        window.addEventListener('resize', reize);
+
+        for (i=0; i<10; i++){
+            ctx.fillStyle = "red";
+            ctx.fillRect(anchorx+i*scale,anchory+i*scale,scale,scale);
+        }
+        window.addEventListener('resize', resize);
     </script>
 </html>
