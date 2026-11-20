@@ -6,6 +6,7 @@
     <canvas id="unimap">
     </canvas>
     <script>
+        env.DB.prepare("CREATE TABLE IF NOT EXISTS logger (posX int, posY int, logged bool, timestamp int);")
         const canvas = document.getElementById("unimap");
         const ctx = canvas.getContext("2d");
         canvas.width = window.innerWidth;
